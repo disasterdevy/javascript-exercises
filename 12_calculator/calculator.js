@@ -25,20 +25,29 @@ const power = function(base, exponent) {
 };
 
 const factorial = function(value) {
-  let total = value;
-  let second_value = total - 1; 
-  for(let i=value; i > 1; i--){
-      total = total * second_value;
-      second_value = second_value - 1;
-      console.log(total);
-    }
-  // exception for zero
-  if(total == 0){
-    total += 1;
+    let result = 1
+    for(let i=value; i > 1; i--){
+      result *= i;
   }
-  
-  return total;
+  return result;
 };
+
+// first solution, revision above
+// const firstfactorial = function(value) {
+//   let total = value;
+//   let second_value = total - 1; 
+//   for(let i=value; i > 1; i--){
+//       total = total * second_value;
+//       second_value = second_value - 1;
+//       console.log(total);
+//     }
+//   // exception for zero
+//   if(total == 0){
+//     total += 1;
+//   }
+  
+//   return total;
+// };
 
 //   const initialValue = 0;
 //  return array.reduce((total, currentValue) => {
