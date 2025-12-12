@@ -5,6 +5,9 @@ const fibonacci = function(n) {
     // converting n to an integer
     n_num = Number(n);
 
+    if(n_num === 1){
+        return fib + 1;
+    }
     if(n_num >= 0){
         for(n_num;n_num > 1; n_num--){
             fib = num_one + num_two;
