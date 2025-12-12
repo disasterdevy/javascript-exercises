@@ -1,11 +1,8 @@
 const getTheTitles = function(array) {
-    
     const results = []
     // how do I access properties of an object through a function? 
-    for(obj in array){
-        return obj[1]
-    }
-        
+    // map() apparently makes the keys and values of an object known, so they don't have to be passed     
+    return array.map((book) => book.title);
 };
 
 // Do not edit below this line
